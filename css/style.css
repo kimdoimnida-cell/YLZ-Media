@@ -1421,9 +1421,9 @@ body.cursor-hover .cursor-follower {
   font-weight: 600;
   padding: 15px 26px;
   border-radius: 10px;
-  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  border: 1.5px solid rgba(0, 0, 0, 0.2);
   background: #1c1c1c;
-  color: var(--white);
+  color: #ffffff;
   text-decoration: none;
   white-space: nowrap;
   transition: background 0.22s, border-color 0.22s, transform 0.22s var(--ease), box-shadow 0.22s;
