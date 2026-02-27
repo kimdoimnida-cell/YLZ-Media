@@ -1153,13 +1153,13 @@ body.cursor-hover .cursor-follower {
   font-family: var(--font-en);
   font-size: 32px;
   font-weight: 800;
-  color: var(--black);
+  color: var(--white);
   letter-spacing: -0.04em;
 }
 
 .category-arrow {
   font-size: 24px;
-  color: var(--black);
+  color: var(--white);
   font-weight: 700;
   cursor: pointer;
   transition: transform 0.3s var(--ease);
