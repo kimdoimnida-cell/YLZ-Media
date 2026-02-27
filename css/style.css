@@ -1142,14 +1142,31 @@ body.cursor-hover .cursor-follower {
   gap: 24px;
 }
 
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
 .category-title {
   font-family: var(--font-en);
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 32px;
+  font-weight: 800;
   color: var(--black);
-  letter-spacing: -0.02em;
-  padding-bottom: 12px;
-  border-bottom: 2px solid var(--black-2);
+  letter-spacing: -0.04em;
+}
+
+.category-arrow {
+  font-size: 24px;
+  color: var(--black);
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.3s var(--ease);
+}
+
+.portfolio-category:hover .category-arrow {
+  transform: translateX(5px);
 }
 
 .category-grid {
