@@ -1129,14 +1129,52 @@ body.cursor-hover .cursor-follower {
   background: var(--black-2);
 }
 
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2px;
+/* 포트폴리오 섹션 수정 - 행별 분리 */
+.portfolio-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 
-/* 포트폴리오 카드 */
+.portfolio-category {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.category-title {
+  font-family: var(--font-en);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--black);
+  letter-spacing: -0.02em;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--black-2);
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+@media (max-width: 1024px) {
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .category-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
 .portfolio-item {
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   position: relative;
   cursor: none;
@@ -1144,8 +1182,13 @@ body.cursor-hover .cursor-follower {
 }
 
 .portfolio-link {
-  display: block;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--black-4);
   color: inherit;
 }
 
